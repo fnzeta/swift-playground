@@ -1,7 +1,7 @@
 import XCTest
 
-import swift_playgroundTests
+import PlaygroundTests
 
 var tests = [XCTestCaseEntry]()
-tests += swift_playgroundTests.allTests()
+tests += PlaygroundTests.allTests()
 XCTMain(tests)

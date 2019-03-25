@@ -1,7 +1,7 @@
 import XCTest
 import class Foundation.Bundle
 
-final class swift_playgroundTests: XCTestCase {
+final class PlaygroundTests: XCTestCase {
     func testExample() throws {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct
@@ -12,7 +12,7 @@ final class swift_playgroundTests: XCTestCase {
             return
         }
 
-        let fooBinary = productsDirectory.appendingPathComponent("swift-playground")
+        let fooBinary = productsDirectory.appendingPathComponent("Playground")
 
         let process = Process()
         process.executableURL = fooBinary
