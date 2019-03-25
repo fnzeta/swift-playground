@@ -22,7 +22,7 @@ public func routes(_ router: Router) throws {
         let task = Process()
         
         // Set the task parameters
-        task.executableURL = URL(string: "/usr/bin/swift") 
+        task.launchPath = "/usr/bin/swift"
         task.arguments = [file.path]
         
         // Create a Pipe and make the task
@@ -34,7 +34,7 @@ public func routes(_ router: Router) throws {
         task.standardOutput = pipe
         
         // Launch the task
-        try task.run()
+        task.launch()
         
         // Get the data
         let data = pipe.fileHandleForReading.readDataToEndOfFile()
