@@ -17,7 +17,7 @@
 			$("#output").html("");
 			$("#output").append("<p class='ide'>Executing...</p>");
 			$.ajax({
-				url: '/run',
+				url: 'https://playground-swift-playground.7e14.starter-us-west-2.openshiftapps.com/run',
 				method: 'POST',
 				data: editor.getValue(),
 				success: function(data) {
